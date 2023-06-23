@@ -17,7 +17,7 @@ def decrypt(encrypted_config, aes_key):
     #print(" ---- Attempting to Decrypt Configuration ---- \n")
 
     # Try except statement to catch any possible unknown version errors
-  #  try:
+   try:
         # Phobos Ransomware always has an IV of 16 null bytes
         iv = bytes([0] * 16)
 
@@ -45,7 +45,7 @@ def decrypt(encrypted_config, aes_key):
         with open('decrypted_config.dump','w') as file:
             file.write(decrypted_config)
         print('\n ---- Decrypted Configuration has also been Dumped to decrypted_config.dump ---- \n')
-    #except:
+   except:
     #    print("Could not decrypt configuration. Likely either not Phobos Ransomware or an incompatible version")
 
 def main():
