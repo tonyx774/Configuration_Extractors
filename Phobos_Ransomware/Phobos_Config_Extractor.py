@@ -14,7 +14,7 @@ def remove_non_ascii(a_str):
 
 # Used to decrypt encrypted configuration data for Phobos Ransomware
 def decrypt(encrypted_config, aes_key):
-    #print(" ---- Attempting to Decrypt Configuration ---- \n")
+   print(" ---- Attempting to Decrypt Configuration ---- \n")
 
     # Try except statement to catch any possible unknown version errors
    try:
@@ -46,7 +46,7 @@ def decrypt(encrypted_config, aes_key):
             file.write(decrypted_config)
         print('\n ---- Decrypted Configuration has also been Dumped to decrypted_config.dump ---- \n')
    except:
-    #    print("Could not decrypt configuration. Likely either not Phobos Ransomware or an incompatible version")
+        print("Could not decrypt configuration. Likely either not Phobos Ransomware or an incompatible version")
 
 def main():
     # Get the pefile as first arguement to program
