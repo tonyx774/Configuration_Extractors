@@ -24,4 +24,4 @@ python3 Phobos_Config_Extractor.py <PhobosRansomwareSample>
 
 
 
-#### Note: This configuration extractor has only been tested on versions 2.9 and 2.9.1 of Phobos
+#### Note: This configuration extractor has been tested on versions 2.9, 2.9.1 and 3.0 of Phobos
